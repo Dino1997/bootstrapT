@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* DOCUMENT INFORMATION
+    -Document Bootstrap Thé
+    -Version 1.0.0
+    -Author Odin le programmeur
+*/
+/* COLORS
+    -default body text #eee
+    -h1
+    -h2 
+    -h3
+
+    -button 
+    -button:hover
+*/
+/* FONTS 
+    -Default Lato
+    -Subtitle
+*/
+/* CSS DIRECTORY
+    1.GLOBAL
+    2.HEADER
+    3.PRODUITS
+*/
+/* GLOBAL
+======================= */
+html {
+  background-color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", "arial", "sans-serif";
+  color: #eee;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  word-spacing: 8px;
+  font-weight: 300;
+}
+
+h2 {
+  color: black;
+  font-size: 250%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: green;
+  width: 100px;
+  content: "";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h3 {
+  color: black;
+  font-size: 160%;
+}
+
+h4 {
+  color: black;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+section {
+  padding: 30px 0 60px 0;
+}
+
+/*HEADER 
+==================== */
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.4)), to(rgba(7, 117, 230, 0.6))), url(../images/tea.jpg);
+  background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.6)), url(../images/tea.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-title {
+  position: relative;
+  top: 30vh;
+}
+
+.home-title h1 {
+  font-size: 340%;
+}
+
+.home-title h1 span {
+  font-weight: 700;
+}
+
+.home-title p {
+  color: #fff;
+}
+
+.home-title .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: background-color 0.5s, color 0.5s, border 0.5s;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+
+.home-title .btn-full {
+  background-color: azure;
+  color: #1ebe40;
+  margin-right: 15px;
+}
+
+.home-title .btn-full:hover {
+  background-color: #1ebe40;
+  color: whitesmoke;
+}
+
+.home-title .btn-gost {
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+}
+
+.home-title .btn-gost:hover {
+  background-color: #1ebe40;
+  color: whitesmoke;
+  border: 2px solid #1ebe40;
+}
+
+/* PRODUITS
+======================= */
+.produit-plus {
+  margin: 20px 0;
+}
+
+.produit-plus:hover .produits-icon {
+  color: #0f680c;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  font-size: 50px;
+}
+
+.produits-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.produits-icon {
+  font-size: 34px;
+  color: #1ebe40;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/* FAMILLES DE THE
+======================= */
+.famille-the {
+  background-color: #cdf6e1;
+}
+
+.famille-the .famille-details {
+  background-color: whitesmoke;
+  padding: 40px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.famille-the .famille-details img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.famille-the .famille-details h4 {
+  text-align: center;
+}
+
+/* FAMILLES DE THE
+======================= */
+.galerie-photo .galerie-img {
+  display: block;
+  background-size: cover;
+  background-position: top center;
+  height: 300px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.galerie-photo .galerie-img .galerie-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.galerie-photo .galerie-img .galerie-title h4 {
+  color: whitesmoke;
+}
+/*# sourceMappingURL=styles.css.map */
